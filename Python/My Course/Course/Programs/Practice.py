@@ -5,5 +5,6 @@ i=1
 sum=0
 while i<=n:
     sum=sum+i
+    print(i)
     i=i+1
-print(sum)
+print("Sum is",sum)
