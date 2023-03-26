@@ -22,13 +22,21 @@
 # print(sum)
 
 #armstrong number:
-i=int(input("Enter Num"))
-og=i
-sum=0
-while i>0:
-    sum=sum+(i%10)*(i%10)*(i%10)
-    i=i//10
-if og==sum:
-    print("Armstrong")
-else:
-    print("Not Armstrong")
+# i=int(input("Enter Num"))
+# og=i
+# sum=0
+# while i>0:
+#     sum=sum+(i%10)*(i%10)*(i%10)
+#     i=i//10
+# if og==sum:
+#     print("Armstrong")
+# else:
+#     print("Not Armstrong")
+    
+#product of digits:
+n = int(input("Enter Number"))
+pro = 1
+while n > 0:
+    pro = pro * (n % 10)
+    n = n // 10
+print(pro)
