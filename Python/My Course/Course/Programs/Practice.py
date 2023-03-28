@@ -169,3 +169,65 @@
 #     i=i+1
 # print(sum)
 
+# Q10
+# n=int(input("Enter:"))
+# i=1
+# sum=0
+# count=0
+# while count<n:
+#     if i%2==0:
+#         sum=sum+i
+#         count=count+1
+#     i=i+1
+# print(sum)
+
+#Q.sum of digits of given number:
+# n=int(input("Enter:"))
+# sum=0
+# while n>0:
+#     sum=sum+(n%10)
+#     n=n//10
+# print(sum)
+
+#Q.Product of digits of given number:
+# n=int(input("Enter:"))
+# pro=1
+# while n>0:
+#     pro=pro*(n%10)
+#     n=n//10
+# print(pro)
+
+#Q.Sum of even digits and Product of odd digits:
+# n=int(input("Enter"))
+# sum=0
+# pro=1
+# while n>0:
+#     if(n%2==0):
+#         sum=sum+(n%10)
+#         n=n//10
+#     else:
+#         pro=pro*(n%10)
+#         n=n//10
+# print(sum)
+# print(pro)
+
+#Q.sum of square of given number:
+# n=int(input("Enter:"))
+# sum=0
+# while n>0:
+#     sum=sum+(n%10)*(n%10)
+#     n=n//10
+# print(sum)
+
+# Q.armstrong:
+# n=int(input("Enter:"))
+# sum=0
+# og=n
+# while n>0:
+#     sum=sum+(n%10)*(n%10)*(n%10)
+#     n=n//10
+# if og==sum:
+#     print(sum,"is armstrong")
+# else:
+#     print(sum,"is not armstrong")
+
