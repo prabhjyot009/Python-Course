@@ -142,5 +142,30 @@
 #     i=i+1
 # print(sum)
 
+# Q7
+# n=int(input("Enter:"))
+# i=1
+# sum=0
+# while i<=n:
+#     sum=sum+(i*i*i)
+#     i=i+1
+# print(sum)
 
-    
+#Q8
+# n=int(input("Enter:"))
+# i=1
+# while i<=n:
+#     if(i%2==0):
+#         print(i)
+#     i=i+1
+
+# Q9
+# n=int(input("Enter:"))
+# i=1
+# sum=0
+# while i<=n:
+#     if i%2==0:
+#         sum=sum+i
+#     i=i+1
+# print(sum)
+
