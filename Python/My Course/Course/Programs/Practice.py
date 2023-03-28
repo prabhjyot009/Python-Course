@@ -95,3 +95,30 @@
 #     fact=fact*n
 #     n-=n-1
 # print(fact)
+
+# Q1
+# i=1
+# while i<=10:
+#     print(i)
+#     i=i+1
+
+# Q2
+# n=int(input("Enter number:"))
+# i=1
+# while i<=n:
+#     print(i)
+#     i=i+1
+
+# Q3
+# i=10
+# while i>=1:
+#     print(i)
+#     i=i-1
+
+n=int(input("Enter:"))
+i=1
+sum=0
+while n>=i:
+    sum=sum+i
+    print(sum)
+    i=i+1
