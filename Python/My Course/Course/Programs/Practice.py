@@ -115,10 +115,32 @@
 #     print(i)
 #     i=i-1
 
-n=int(input("Enter:"))
-i=1
-sum=0
-while n>=i:
-    sum=sum+i
-    print(sum)
-    i=i+1
+# Q4
+# n=int(input("Enter:"))
+# i=1
+# sum=0
+# while n>=i:
+#     sum=sum+i
+#     i=i+1
+# print(sum)
+
+# Q5
+# n=int(input("Enter:"))
+# i=1
+# sum=0
+# while i<=n:
+#     sum=sum+i
+#     i=i+1
+#     print(sum)
+
+# Q6
+# n=int(input("Enter:"))
+# i=1
+# sum=0
+# while i<=n:
+#     sum=sum+(i*i)
+#     i=i+1
+# print(sum)
+
+
+    
