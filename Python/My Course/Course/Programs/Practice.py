@@ -278,3 +278,5 @@ while num!=0:
     num = int(num/10)
 sum = rem + last
 print("\nSum of first and last digit =", sum)
+
+#Q. 
