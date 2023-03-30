@@ -232,13 +232,49 @@
 #     print(sum,"is not armstrong")
 
 #Q. palindrome:
-n=int(input("Enter:"))
-rev=0
-temp=n
-while n>0:
-    rev=(rev*10)+n%10
-    n=n//10
-if temp==rev:
-    print("Palindrome")
-else:
-    print("Not Palindrome")
+# n=int(input("Enter:"))
+# rev=0
+# temp=n
+# while n>0:
+#     rev=(rev*10)+n%10
+#     n=n//10
+# if temp==rev:
+#     print("Palindrome")
+# else:
+#     print("Not Palindrome")
+    
+# Q.factors of given number
+# n=int(input("Enter:"))
+# i=1
+# while i<=n:
+#     if n%i==0:
+#         print(i)
+#     i=i+1
+    
+# Q.prime no.
+# n=int(input("Enter a no:"))
+# i=1
+# count=0
+# while i<=n:
+#     if(n%i==0):
+#         count+=1
+#     i+=1
+# if count==2:
+#     print("Prime")
+# else:
+#     print("Composite")
+    
+#Q.sum of first and last digit
+print("Enter a Number: ")
+num = int(input())
+last=0
+rem=0
+count = 0
+while num!=0:
+    if count==0:
+        last = num%10
+        count = count+1
+    rem = num%10
+    num = int(num/10)
+sum = rem + last
+print("\nSum of first and last digit =", sum)
