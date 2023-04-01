@@ -265,18 +265,39 @@
 #     print("Composite")
     
 #Q.sum of first and last digit
-print("Enter a Number: ")
-num = int(input())
-last=0
-rem=0
-count = 0
-while num!=0:
-    if count==0:
-        last = num%10
-        count = count+1
-    rem = num%10
-    num = int(num/10)
-sum = rem + last
-print("\nSum of first and last digit =", sum)
+# print("Enter a Number: ")
+# num = int(input())
+# last=0
+# rem=0
+# count = 0
+# while num!=0:
+#     if count==0:
+#         last = num%10
+#         count = count+1
+#     rem = num%10
+#     num = int(num/10)
+# sum = rem + last
+# print("\nSum of first and last digit =", sum)
 
-#Q. 
+#Q. sum of first and last digit
+# We have a number.
+number = 1247
+ 
+# Assigning last digit of the number in res
+# variable.
+res = number % 10
+ 
+# Now, continue a loop until
+# the number becomes less than 9.
+while number > 9:
+ 
+    # integer division of the number and reassigning
+    # it.
+    number = number // 10
+ 
+# Here, our number only contain one digit.
+# So, add this number in res variable.
+res += number
+ 
+# Now, display our output
+print('Addition of first and last digit of number is', res)
