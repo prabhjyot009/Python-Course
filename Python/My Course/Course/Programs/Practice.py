@@ -301,3 +301,4 @@ res += number
  
 # Now, display our output
 print('Addition of first and last digit of number is', res)
+
