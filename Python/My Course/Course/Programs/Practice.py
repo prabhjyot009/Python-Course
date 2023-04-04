@@ -281,24 +281,65 @@
 
 #Q. sum of first and last digit
 # We have a number.
-number = 1247
+# number = 1247
  
-# Assigning last digit of the number in res
-# variable.
-res = number % 10
+# # Assigning last digit of the number in res
+# # variable.
+# res = number % 10
  
-# Now, continue a loop until
-# the number becomes less than 9.
-while number > 9:
+# # Now, continue a loop until
+# # the number becomes less than 9.
+# while number > 9:
  
-    # integer division of the number and reassigning
-    # it.
-    number = number // 10
+#     # integer division of the number and reassigning
+#     # it.
+#     number = number // 10
  
-# Here, our number only contain one digit.
-# So, add this number in res variable.
-res += number
+# # Here, our number only contain one digit.
+# # So, add this number in res variable.
+# res += number
  
-# Now, display our output
-print('Addition of first and last digit of number is', res)
+# # Now, display our output
+# print('Addition of first and last digit of number is', res)
 
+# print("Enter Character: ")
+# text=input()
+
+# vovela=['a','A']
+# vovele=['e','E']
+# voveli=['i','I']
+# vovelo=['o','O']
+# vovelu=['u','U']
+# ca=0
+# ce=0
+# ci=0
+# co=0
+# cu=0
+
+# for x in text:
+#     if x in vovela:
+#         ca=ca+1
+#     elif x in vovele:
+#         ce=ce+1
+#     elif x in voveli:
+#         ci=ci+1
+#     elif x in vovelo:
+#         co=co+1
+#     elif x in vovelu:
+#         cu=cu+1
+        
+# print(ca)
+# print(ce)
+# print(ci)
+# print(co)
+# print(cu)
+
+num =1234  
+li = list( str(num)) # Point 1 
+ 
+# Point 2 
+temp = li[0] 
+li[0] = li[-1] 
+li[-1] = temp 
+ 
+print( int("".join(li)) ) #point 3
