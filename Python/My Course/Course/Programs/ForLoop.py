@@ -53,3 +53,5 @@ if num>1:
         print(num,"It is prime")
 else:
     print(num,"Not prime")
+    
+char=int(input("Enter:"))
