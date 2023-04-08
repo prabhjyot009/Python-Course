@@ -8,8 +8,3 @@ print("The list is:",l)
 for i in l:
     if len(i)%5==0:
         print("The index of",i,"is:",l.index(i))
-
-
-
-
-
