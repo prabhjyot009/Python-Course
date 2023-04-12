@@ -302,35 +302,26 @@
 # # Now, display our output
 # print('Addition of first and last digit of number is', res)
 
-# print("Enter Character: ")
-# text=input()
-
-# vovela=['a','A']
-# vovele=['e','E']
-# voveli=['i','I']
-# vovelo=['o','O']
-# vovelu=['u','U']
-# ca=0
-# ce=0
-# ci=0
-# co=0
-# cu=0
-
-# for x in text:
-#     if x in vovela:
-#         ca=ca+1
-#     elif x in vovele:
-#         ce=ce+1
-#     elif x in voveli:
-#         ci=ci+1
-#     elif x in vovelo:
-#         co=co+1
-#     elif x in vovelu:
-#         cu=cu+1
+# n=input("Enter:")
+# for x in n:
+#     if x not in 'aeiouAEIOU':
+#         print(x)
         
-# print(ca)
-# print(ce)
-# print(ci)
-# print(co)
-# print(cu)
+# x={1,2,3,1,2,3}
+# for i in x:
+#     print(i)
+    
+# A={1,2,3,4,5}
+# B={4,5,6}
+# AUB=A.union(B)
+# AUB={1,2,3,4,5,6,7,8}
+# print(AUB)
+# #intersection
+# A={1,2,3,4,5}
+# B={4,5,6}
+# AUB=A.intersection(B)
+# AUB={4,5}
+# print(AUB)
 
+a=[1,2,3,5,4]
+print(a[::])

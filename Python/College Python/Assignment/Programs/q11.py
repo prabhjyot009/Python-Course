@@ -22,3 +22,4 @@ count = vowels + consonants + digits + special_characters
 print("Total number of characters in a string: ", count)
 print("Total number of vowels in a string: ", vowels)
 print("Total number of vovels in ")
+
