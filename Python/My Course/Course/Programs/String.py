@@ -93,4 +93,3 @@ print(s1.format(qty,item,price))
 #escape sequencing
 t1="hey you \"mf\""
 print(t1)
-
