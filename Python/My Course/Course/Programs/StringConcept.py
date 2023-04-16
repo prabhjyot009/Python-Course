@@ -74,15 +74,24 @@
 # print(a.find(b,0,len(a))) 
 
 #palindrome string using slicing:
-a=input("Enter:")
-b=a[-1::-1] #sis: -3-2-1:index (-1:s se -1 i -1 s)
-if b==a:
-    print("Palindrome")
-else:
-    print("Not palindrome")
+# a=input("Enter:")
+# b=a[-1::-1] #sis: -3-2-1:index (-1:s se -1 i -1 s)
+# if b==a:
+#     print("Palindrome")
+# else:
+#     print("Not palindrome")
     
-a=input("Enter:")
-b=a
-for i in range(-1,0):
-    if b==a:
-        print("Palindrome")
+# a=input("Enter:")
+# b=a
+# for i in range(-1,0):
+#     if b==a:
+#         print("Palindrome")
+        
+#isalnum function:
+n="sir12"
+print(n.isalnum())
+
+#isdigit() function:
+n="123";
+print(n.isdigit())
+
