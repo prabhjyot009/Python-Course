@@ -279,6 +279,16 @@
 # n.append(ele)
 # print(n)
 
+# n=[]
+# size=int(input("Enter size:"))
+# for i in range(size):
+#     val=int(input("Input values"))
+#     n.append(val)
+# mul=1
+# for i in range(size):
+#     mul=mul*n[i]
+# print(mul)
+
 n=[]
 size=int(input("Enter size:"))
 for i in range(size):
