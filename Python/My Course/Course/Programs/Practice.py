@@ -328,22 +328,34 @@
 
 #Lcm and hcf:
 
-num=int(input("Enter number:"))
-for i in range(1,num+1):
-    if(num%i==0):
-     print("Factor is: ", i)
+# num=int(input("Enter number:"))
+# for i in range(1,num+1):
+#     if(num%i==0):
+#      print("Factor is: ", i)
 
 #Lcm and hcf:
+# num1=int(input("Enter num1:"))
+# num2=int(input("Enter num2:"))
+# num3=int(input("Enter num3:"))
+
+# maxnum=max(num1,num2,num3)
+# lcm=maxnum
+
+# while True:
+#     if(lcm%num1==0 and lcm%num2==0 and lcm%num3==0):
+#         break;
+#     else:
+#         lcm+=maxnum
+# print(lcm)
+
 num1=int(input("Enter num1:"))
 num2=int(input("Enter num2:"))
 num3=int(input("Enter num3:"))
+minnum=min(num1,num2,num3)
+hcf=1
 
-maxnum=max(num1,num2,num3)
-lcm=maxnum
+for i in range(1,minnum+1):
+    if(num1%i==0 and num2%i==0 and num3%i==0):
+        hcf=i
+print(hcf)
 
-while True:
-    if(lcm%num1==0 and lcm%num2==0 and lcm%num3==0):
-        break;
-    else:
-        lcm+=maxnum
-        
