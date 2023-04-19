@@ -289,8 +289,83 @@
 #     mul=mul*n[i]
 # print(mul)
 
+# n=[]
+# size=int(input("Enter size:"))
+# for i in range(size):
+#     val=int(input("Input values"))
+#     n.append(val)
+# print(n)
+# posOne=int(input())
+# posTwo=int(input())
+# for i in range(size):
+#     n[posOne], n[posTwo] = n[posTwo], n[posOne]
+# print(n)
+
+# n=[]
+# size=int(input("Enter size:"))
+# for i in range(size):
+#     val=int(input("Input values"))
+#     n.append(val)
+# print(n)
+# new=[]
+# for i in range(size):
+#     if n[i] not in new:
+#         new.append(n[i])
+# print(new)
+
+
+# print("Enter list 1:")
+# n1=[]
+# size=int(input("Enter size:"))
+# for i in range(size):
+#     val=int(input("Input values"))
+#     n1.append(val)
+# print(n1)
+# print("Enter list 2:")
+# n2=[]
+# size=int(input("Enter size:"))
+# for i in range(size):
+#     val=int(input("Input values"))
+#     n2.append(val)
+# print(n2)
+# n3=[]
+# for i in range(size):
+#     n3.append(n1[i])
+# for i in range(size):
+#     n3.append(n2[i])
+# print(n3)
+
+# print("Enter String: ", end="")
+# sOne = input()
+
+# sTwo = sOne[:]
+# print("\nCopied String =", sTwo)
+
+# n=[]
+# size=int(input("Enter size:"))
+# for i in range(size):
+#     val=int(input("Input values"))
+#     n.append(val)
+# print(n)
+
+# n=[]
+# size=int(input("Enter size:"))
+# for i in range(size):
+#     val=int(input("Input values"))
+#     n.append(val)
+# print(n)
+# strrev=n[::-1]
+# print(strrev)
+
 n=[]
 size=int(input("Enter size:"))
 for i in range(size):
-    val=int(input("Input values"))
+    val=input("Input values")
     n.append(val)
+print(n)
+char=input()
+sum=0
+for i in range(size):
+    if char==n[i]:
+        sum=sum+1
+print(sum)
