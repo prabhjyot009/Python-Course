@@ -323,5 +323,27 @@
 # AUB={4,5}
 # print(AUB)
 
-a=[1,2,3,5,4]
-print(a[::])
+# a=[1,2,3,5,4]
+# print(a[::])
+
+#Lcm and hcf:
+
+num=int(input("Enter number:"))
+for i in range(1,num+1):
+    if(num%i==0):
+     print("Factor is: ", i)
+
+#Lcm and hcf:
+num1=int(input("Enter num1:"))
+num2=int(input("Enter num2:"))
+num3=int(input("Enter num3:"))
+
+maxnum=max(num1,num2,num3)
+lcm=maxnum
+
+while True:
+    if(lcm%num1==0 and lcm%num2==0 and lcm%num3==0):
+        break;
+    else:
+        lcm+=maxnum
+        

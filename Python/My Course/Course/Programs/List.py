@@ -190,19 +190,41 @@ for i in range(size):
 
 #14.Write a program to find count of vowels,consonants and special characters using list.
 
-a=input("Enter a string: ")
-vowels=0
-consonants=0
-special=0
-v=['a','e','i','o','u','A','E','I','O','U']
-c=['b','c','d','f','g','h','j','k','l','m','n','p','q','r','s','t','v','w','x','y','z','B','C','D','F','G','H','J','K','L','M','N','P','Q','R','S','T','V','W','X','Y','Z']
-for i in a:
-    if i in v:
-        vowels=vowels+1
-    elif i in c:
-        consonants=consonants+1
-    else:
-        special=special+1
-print("Total no of vowels in a string is: ",vowels)
-print("Total no of consonants in a string is: ",consonants)
-print("Total no of special characters in a string is: ",special)
+# a=input("Enter a string: ")
+# vowels=0
+# consonants=0
+# special=0
+# v=['a','e','i','o','u','A','E','I','O','U']
+# c=['b','c','d','f','g','h','j','k','l','m','n','p','q','r','s','t','v','w','x','y','z','B','C','D','F','G','H','J','K','L','M','N','P','Q','R','S','T','V','W','X','Y','Z']
+# for i in a:
+#     if i in v:
+#         vowels=vowels+1
+#     elif i in c:
+#         consonants=consonants+1
+#     else:
+#         special=special+1
+# print("Total no of vowels in a string is: ",vowels)
+# print("Total no of consonants in a string is: ",consonants)
+# print("Total no of special characters in a string is: ",special)
+
+#lcm of two numbers using factors:
+a=int(input("Enter a number: "))
+b=int(input("Enter a number: "))
+c=[]
+d=[]
+for i in range(1,a+1):
+    if a%i==0:
+        c.append(i)
+print("Factors of a: ",c)
+for j in range(1,b+1):
+    if b%j==0:
+        d.append(j)
+print("Factors of b: ",d)
+e=[]
+for i in c:
+    for j in d:
+        if i==j:
+            e.append(i)
+print("Common factors: ",e)
+print("LCM of two numbers is: ",max(e))
+print("HCF of two numbers is: ",min(e))
