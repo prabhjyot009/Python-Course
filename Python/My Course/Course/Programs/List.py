@@ -208,23 +208,66 @@ for i in range(size):
 # print("Total no of special characters in a string is: ",special)
 
 #lcm of two numbers using factors:
-a=int(input("Enter a number: "))
-b=int(input("Enter a number: "))
-c=[]
-d=[]
-for i in range(1,a+1):
-    if a%i==0:
-        c.append(i)
-print("Factors of a: ",c)
-for j in range(1,b+1):
-    if b%j==0:
-        d.append(j)
-print("Factors of b: ",d)
-e=[]
-for i in c:
-    for j in d:
-        if i==j:
-            e.append(i)
-print("Common factors: ",e)
-print("LCM of two numbers is: ",max(e))
-print("HCF of two numbers is: ",min(e))
+# a=int(input("Enter a number: "))
+# b=int(input("Enter a number: "))
+# c=[]
+# d=[]
+# for i in range(1,a+1):
+#     if a%i==0:
+#         c.append(i)
+# print("Factors of a: ",c)
+# for j in range(1,b+1):
+#     if b%j==0:
+#         d.append(j)
+# print("Factors of b: ",d)
+# e=[]
+# for i in c:
+#     for j in d:
+#         if i==j:
+#             e.append(i)
+# print("Common factors: ",e)
+# print("LCM of two numbers is: ",max(e))
+# print("HCF of two numbers is: ",min(e))
+
+#binary search:
+
+# Binary Search Algorithm
+a = [] # Empty list
+size = int(input("Enter size: ")) # 5
+# Input the array
+for i in range(size): # 0,1,2,3,4
+    value = int(input("Enter value: ")) # 5,7,2,9,1
+    a.append(value) # a[0]=5, a[1]=7, a[2]=2, a[3]=9, a[4]=1
+print("Orignal list is: ", a) # [5,7,2,9,1]
+# Sort the array
+a.sort() # [1,2,5,7,9]
+print("Sorted list is: ", a) # [1,2,5,7,9]
+# Input the key to be searched
+key = int(input("Enter key: ")) # 5
+low = 0 # 0
+high = size-1 # 4
+# Search the key using for loop
+for i in range(size): # 0,1,2,3,4
+    mid = (low+high)//2 # 2
+    if key == a[mid]: # 5==5
+        print("Element found at: ", mid) # 2
+        break
+    elif key < a[mid]: # 5<5
+        high = mid-1 # 1
+    elif key > a[mid]: # 5>5
+        low = mid+1 # 3
+else:
+    print("Element not found")
+    
+    #output:
+    
+# Enter size: 5
+# Enter value: 5
+# Enter value: 7
+# Enter value: 2
+# Enter value: 9
+# Enter value: 1
+# Orignal list is:  [5, 7, 2, 9, 1]
+# Sorted list is:  [1, 2, 5, 7, 9]
+# Enter key: 5
+# Element found at:  2
