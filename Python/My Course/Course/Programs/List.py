@@ -229,16 +229,32 @@ for i in range(size):
 # print("LCM of two numbers is: ",max(e))
 # print("HCF of two numbers is: ",min(e))
 
+#Linear Search:
+
+# a=[]
+# size=int(input("Enter size: "))
+# for i in range(size):
+#     val=int(input("Enter value: "))
+#     a.append(val)
+# print("Orignal list is: ",a)
+# key=int(input("Enter key: "))
+# for i in range(size):
+#       if key==a[i]:
+          
+          
+          
+          
 #binary search:
 
 # Binary Search Algorithm
-a = [] # Empty list
+a=[] # Empty list
 size = int(input("Enter size: ")) # 5
 # Input the array
 for i in range(size): # 0,1,2,3,4
     value = int(input("Enter value: ")) # 5,7,2,9,1
     a.append(value) # a[0]=5, a[1]=7, a[2]=2, a[3]=9, a[4]=1
 print("Orignal list is: ", a) # [5,7,2,9,1]
+
 # Sort the array
 a.sort() # [1,2,5,7,9]
 print("Sorted list is: ", a) # [1,2,5,7,9]
