@@ -231,17 +231,17 @@ for i in range(size):
 
 #Linear Search:
 
-# a=[]
-# size=int(input("Enter size: "))
-# for i in range(size):
-#     val=int(input("Enter value: "))
-#     a.append(val)
-# print("Orignal list is: ",a)
-# key=int(input("Enter key: "))
-# for i in range(size):
-#       if key==a[i]:
-          
-          
+a=[]
+size=int(input("Enter size: "))
+for i in range(size):
+    val=int(input("Enter value: "))
+    a.append(val)
+print("Orignal list is: ",a)
+key=int(input("Enter key: "))
+for i in range(size):
+      if key==a[i]:
+          print(a[i])
+          break
           
           
 #binary search:

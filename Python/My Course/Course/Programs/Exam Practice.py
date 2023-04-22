@@ -357,15 +357,16 @@
 # strrev=n[::-1]
 # print(strrev)
 
-n=[]
-size=int(input("Enter size:"))
-for i in range(size):
-    val=input("Input values")
-    n.append(val)
-print(n)
-char=input()
-sum=0
-for i in range(size):
-    if char==n[i]:
-        sum=sum+1
-print(sum)
+# n=[]
+# size=int(input("Enter size:"))
+# for i in range(size):
+#     val=input("Input values")
+#     n.append(val)
+# print(n)
+# char=input()
+# sum=0
+# for i in range(size):
+#     if char==n[i]:
+#         sum=sum+1
+# print(sum)
+
