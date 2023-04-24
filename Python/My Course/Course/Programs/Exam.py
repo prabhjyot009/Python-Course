@@ -60,31 +60,36 @@
 #         print("Position",i+1)
 
 # Get the input list from the user
-input_list = input("Enter the sorted list of numbers (comma-separated): ").split(",")
-input_list = [int(i) for i in input_list]
+# input_list = input("Enter the sorted list of numbers (comma-separated): ").split(",")
+# input_list = [int(i) for i in input_list]
 
-# Get the number to search from the user
-search_num = int(input("Enter the number to search: "))
+# # Get the number to search from the user
+# search_num = int(input("Enter the number to search: "))
 
-# Initialize variables
-left = 0
-right = len(input_list) - 1
-found = False
+# # Initialize variables
+# left = 0
+# right = len(input_list) - 1
+# found = False
 
-# Perform binary search
-while left <= right:
-    mid = (left + right) // 2
-    if input_list[mid] == search_num:
-        found = True
-        break
-    elif input_list[mid] < search_num:
-        left = mid + 1
-    else:
-        right = mid - 1
+# # Perform binary search
+# while left <= right:
+#     mid = (left + right) // 2
+#     if input_list[mid] == search_num:
+#         found = True
+#         break
+#     elif input_list[mid] < search_num:
+#         left = mid + 1
+#     else:
+#         right = mid - 1
 
-# Print the result
-if found:
-    print(f"{search_num} found at index {mid}.")
-else:
-    print(f"{search_num} not found in the list.")
+# # Print the result
+# if found:
+#     print(f"{search_num} found at index {mid}.")
+# else:
+#     print(f"{search_num} not found in the list.")
 
+
+
+num = int(input("Enter a number: "))
+print(oct(num))
+print(hex(num))
