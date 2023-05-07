@@ -18,16 +18,30 @@
 # i=int(input("Enter number:"))
 # x=reverse(i)
 
+# def listadd(a):
+#     sum=0
+#     for i in a:
+#         sum=sum+i;
+#     print(sum)
+# # l=[]
+# # size=int(input("Enter size:"))
+# # for i in range(size):
+# #     val=int(input("Enter values:"))
+# #     l.append(val)
+# # print(l)
+# a=int(input("Enter elemnt to add:"))
+# listadd(a)
+
+
 def listadd(a):
     sum=0
     for i in a:
         sum=sum+i;
     print(sum)
-# l=[]
-# size=int(input("Enter size:"))
-# for i in range(size):
-#     val=int(input("Enter values:"))
-#     l.append(val)
-# print(l)
-a=int(input("Enter elemnt to add:"))
-listadd(a)
+l=[]
+size=int(input("Enter size:"))
+for i in range(size):
+    val=int(input("Enter values:"))
+    l.append(val)
+print(l)
+listadd(l)
