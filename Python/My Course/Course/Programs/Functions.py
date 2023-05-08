@@ -33,15 +33,25 @@
 # listadd(a)
 
 
-def listadd(a):
-    sum=0
-    for i in a:
-        sum=sum+i;
-    print(sum)
-l=[]
-size=int(input("Enter size:"))
-for i in range(size):
-    val=int(input("Enter values:"))
-    l.append(val)
-print(l)
-listadd(l)
+# def listadd(a):
+#     sum=0
+#     for i in a:
+#         sum=sum+i;
+#     print(sum)
+# l=[]
+# size=int(input("Enter size:"))
+# for i in range(size):
+#     val=int(input("Enter values:"))
+#     l.append(val)
+# \
+    
+# print(l)
+# listadd(l)
+
+def calc(a,b):
+    global z
+    z=a+b
+    return z
+print(calc(10,20))
+z="hello"
+print(z)
