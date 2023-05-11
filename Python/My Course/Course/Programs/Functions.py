@@ -86,5 +86,6 @@
 #lambda functions are anoynymous functions that is fucntion eithout name these fucntionsa have only single line they can have any number of arguments
 #they cannnot access global varuable and donot have explicit return statement
 
-sum=lambda x,y:x+y
-print(sum(10,20))
+# sum=lambda x,y:x+y
+# print(sum(10,20))
+
