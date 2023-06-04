@@ -1,2 +1,2 @@
 # Python-Course
-Learning python for AI projects
+Learning python for AI/ML/DL projects
