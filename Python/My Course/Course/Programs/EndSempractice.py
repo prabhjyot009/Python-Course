@@ -1,4 +1,4 @@
-    size=int(input("Enter Size:"))
+size=int(input("Enter Size:"))
 arr=[]
 for i in range(size):
     arr.append(input())
@@ -10,6 +10,6 @@ for i in range(size):
         index=i
         chk=1
 if chk==1:
-    print("Element found at index",str(Index))
+    print("Element found at index",str(index))
 else:
     print("Not found")
