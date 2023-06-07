@@ -15,3 +15,4 @@ print(df)
 print(df.iloc[0:3, 0:2])
 #indexing
 print(df.loc[0:3, 'Player'])
+print(df.loc[0:4,'Score'])
