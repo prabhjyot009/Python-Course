@@ -6,8 +6,8 @@ print(arr)
 #sorting the array:
 sorted_array_index=np.argsort(arr)
 sort_arr=arr[sorted_array_index]
-print(sort_arr)
+print("Sorted Array:",sort_arr)
 
 n=1
 result=sort_arr[-n:]
-print(result[0])
+print("Largest Value:",result[0])
