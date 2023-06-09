@@ -89,3 +89,5 @@
 # sum=lambda x,y:x+y
 # print(sum(10,20))
 
+#No argument with No return:
+
