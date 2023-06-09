@@ -43,7 +43,7 @@
 # for i in range(size):
 #     val=int(input("Enter values:"))
 #     l.append(val)
-#   
+#
 # print(l)
 # listadd(l)
 
@@ -69,7 +69,7 @@
 # z="hello"
 # print(z)
 
-#Q1.create a function which takes n number of inputs from tuple and return the sum of all the elements in the list and print the list.
+# Q1.create a function which takes n number of inputs from tuple and return the sum of all the elements in the list and print the list.
 # def listadd(*a):
 #     sum=0
 #     for i in a:
@@ -83,11 +83,181 @@
 # ll=
 # print(listadd(*l))
 
-#lambda functions are anoynymous functions that is fucntion eithout name these fucntionsa have only single line they can have any number of arguments
-#they cannnot access global varuable and donot have explicit return statement
+# lambda functions are anoynymous functions that is fucntion eithout name these fucntionsa have only single line they can have any number of arguments
+# they cannnot access global varuable and donot have explicit return statement
 
 # sum=lambda x,y:x+y
 # print(sum(10,20))
 
-#No argument with No return:
+# No argument with No return:
 
+# def add():
+#     a=10
+#     b=20
+#     c=a+b
+#     print("Addition is",c)
+# add()
+
+# def add():
+#     a=int(input("Enter a:"))
+#     b=int(input("Enter b:"))
+#     c=a+b
+#     print(c)
+# add()
+
+# Argument with no return:
+
+# def add(a,b):
+#     c=a+b
+#     print(c)
+# a=int(input("ENter a:"))
+# b=int(input("ENter b:"))
+# add(a,b)
+
+# No argument with return:
+
+# def add():
+#     a=int(input("Enter a:"))
+#     b=int(input("Enter b:"))
+#     c=a+b
+#     return c
+# sum=add()
+# print(sum)
+
+# argument with return:
+
+# def add(a,b):
+#     c=a+b
+#     return c
+# a=int(input("Enter a:"))
+# b=int(input("Enter b:"))
+# sum=add(a,b)
+# print(sum)
+
+# questions:
+
+# maximum of 3 numbers in a list:
+
+# def max(a,b,c):
+#     if a>b and a>c:
+#         print("A is greater")
+#     elif b>a and b>c:
+#         print("B is greater")
+#     else:
+#         print("C is greater")
+# a=int(input("Enter a:"))
+# b=int(input("Enter b:"))
+# c=int(input("Enter c:"))
+# output=max(a,b,c)
+
+# 2. Write a Python function to sum all the numbers in a list.
+# Sample List : (8, 2, 3, 0, 7)
+# Expected Output : 20
+
+# def sumlist(l):
+#     sum = 0
+#     for i in l:
+#         sum = sum+i
+#     return sum
+
+
+# l = [8, 2, 3, 0, 7]
+# s = sumlist(l)
+# print(s)
+
+# 4. Write a Python program to reverse a string.
+# Sample String : "1234abcd"
+# Expected Output : "dcba4321"
+
+# def s(string):
+#     rev=None
+#     for i in range(len(string)):
+#         rev=string[::-1]
+#     print(rev)
+#     return rev
+# string=input("Enter string:")
+# call=s(string)
+
+#check if palindrome or not:
+# def s(string):
+#     rev=None
+#     for i in range(len(string)):
+#         rev=string[::-1]
+#     print(rev)
+#     return rev
+# string=input("Enter string:")
+# call=s(string)
+# if string==call:
+#     print("Palindrome")
+# else:
+#     print("Not palindrome")
+    
+# 5. Write a Python function to calculate the 
+# factorial of a number (a non-negative integer).
+# The function accepts the number as an argument.
+# Click me to see the sample solution
+
+# def factorial(a):
+#     fact=1
+#     while a>0:
+#         fact=fact*(a%10)
+#         a=a//10
+#     print(fact)
+# a=int(input("ENter number"))
+# f=factorial(a)
+
+# 6. Write a Python function to check whether a number falls within a given range.
+
+# def rangee(n):
+#     if n in range(3,9):
+#         print("yesss")
+#     else:
+#         print("NOOOO")
+#     return n
+# n=8
+# call=rangee(n)
+
+# 7. Write a Python function that accepts a 
+# string and counts the number of upper and
+# lower case letters.
+# Sample String : 'The quick Brow Fox'
+# Expected Output :
+# No. of Upper case characters : 3
+# No. of Lower case Characters : 12
+
+# def string(s):
+#     countupper=0
+#     countlower=0
+#     for i in s:
+#         if i.isupper():
+#             countupper+=1
+#         elif i.islower():
+#             countlower+=1
+#         else:
+#             pass
+#     print("Orignal:",s)
+#     print("No of uppercase:",countupper)
+#     print("No of lowercase:",countlower)
+# s=input("ENter string:")
+# call=string(s)
+
+# 8. Write a Python function that takes a 
+# list and returns a new list with distinct 
+# elements from the first list.
+# Sample List : [1,2,3,3,3,3,4,5]
+# Unique List : [1, 2, 3, 4, 5]
+
+def uniquelist(l):
+    samplelist=[]
+    for i in l:
+        if i not in samplelist:
+            samplelist.append(i)
+    print(samplelist)
+    return samplelist
+l=[]
+size=int(input("Enter size:"))
+for i in range(size):
+    val=int(input("ENter elements:"))
+    l.append(val)
+print(l)
+call=uniquelist(l)
