@@ -266,14 +266,52 @@
 # as a parameter and checks whether the number is
 # prime or not.
 
-def prime(n):
-    if n==1:
-        return False
-    elif n==2:
-        return True
-    else:
-        for i in range(2,n):
-            if n%i==0:
-                return False
-        return True
-print(prime(9))
+# def prime(n):
+#     if n==1:
+#         return False
+#     elif n==2:
+#         return True
+#     else:
+#         for i in range(2,n):
+#             if n%i==0:
+#                 return False
+#         return True
+# n=int(input("Enter number:"))
+# call=prime(n)
+# print(call)
+
+# 10. Write a Python program to print the even 
+# numbers from a given list.
+# Sample List : [1, 2, 3, 4, 5, 6, 7, 8, 9]
+# Expected Result : [2, 4, 6, 8]
+
+# def even(l):
+#     x=[]
+#     for i in l:
+#         if i%2==0:
+#             x.append(i)
+#         else:
+#             pass
+#     return x
+# print(even([1,2,3,4,5,6]))
+
+
+#function inside function
+# def test(a):
+#     def add(b):
+#         nonlocal a
+#         a+=1
+#         return a+b
+#     return add
+# func=test(4)
+# print(func(4))
+
+#local variable:
+# def abc():
+#     x=1
+#     y=2
+#     str1='hello'
+#     z=4
+#     print("yo")
+# print(abc.__code__.co_nlocals)
+
