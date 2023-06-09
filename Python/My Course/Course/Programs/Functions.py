@@ -247,17 +247,33 @@
 # Sample List : [1,2,3,3,3,3,4,5]
 # Unique List : [1, 2, 3, 4, 5]
 
-def uniquelist(l):
-    samplelist=[]
-    for i in l:
-        if i not in samplelist:
-            samplelist.append(i)
-    print(samplelist)
-    return samplelist
-l=[]
-size=int(input("Enter size:"))
-for i in range(size):
-    val=int(input("ENter elements:"))
-    l.append(val)
-print(l)
-call=uniquelist(l)
+# def samplelist(l):
+#     uniquelist=[]
+#     for i in l:
+#         if i not in uniquelist:
+#             uniquelist.append(i)
+#     print("Unique List",uniquelist)
+#     return uniquelist
+# l=[]
+# size=int(input("Enter size:"))
+# for i in range(size):
+#     val=int(input("ENter elements:"))
+#     l.append(val)
+# print("Orignal List",l)
+# call=samplelist(l)
+
+# 9. Write a Python function that takes a number 
+# as a parameter and checks whether the number is
+# prime or not.
+
+def prime(n):
+    if n==1:
+        return False
+    elif n==2:
+        return True
+    else:
+        for i in range(2,n):
+            if n%i==0:
+                return False
+        return True
+print(prime(9))
