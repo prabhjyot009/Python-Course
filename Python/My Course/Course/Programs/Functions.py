@@ -307,11 +307,11 @@
 # print(func(4))
 
 #local variable:
-# def abc():
-#     x=1
-#     y=2
-#     str1='hello'
-#     z=4
-#     print("yo")
-# print(abc.__code__.co_nlocals)
+def abc():
+    x=1
+    y=2
+    str1='hello'
+    z=4
+    print("yo")
+print(abc.__code__.co_nlocals)
 
