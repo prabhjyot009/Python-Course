@@ -17,3 +17,13 @@
 # except ValueError:
 #     print("Not Eligible")
 
+try:
+    a=int(input())
+    b=int(input())
+    c=a/b
+except ZeroDivisionError:
+    print("Can't divide by zero")
+except ValueError:
+    print("Invalid input")
+else:
+    print("YO")
