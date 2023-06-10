@@ -1,16 +1,16 @@
 #Linear Search:
 
-# x=[1,2,3,4,5]
-# n=int(input("Enter Number to search"))
-# flag=-1
-# for i in range(0,len(x)):
-#     if n==x[i]:
-#         flag=i
-#         break
-# if flag==-1:
-#     print("Number not found")
-# else:
-#     print("Number found at index",flag,"Position",flag+1)
+x=[1,2,3,4,5]
+n=int(input("Enter Number to search"))
+flag=-1
+for i in range(0,len(x)):
+    if n==x[i]:
+        flag=i
+        break
+if flag==-1:
+    print("Number not found")
+else:
+    print("Number found at index",flag,"Position",flag+1)
     
 # binary search
 # y=[1,2,3,4,5,6,7,8,13,14,15,9,10,11,12]
