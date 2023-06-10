@@ -121,3 +121,28 @@
 # s1.max()
 
 
+# class student:
+#     def set_data(self):
+#         self.name=input('Enter name:')
+#         self.roll=int(input("Enter roll no."))
+#         self.per=float(input("Enter percentage:"))
+#     def show(self):
+#         print("Name:",self.name)
+#         print("Roll no.:",self.roll)
+#         print("Percentage:",self.per)
+# obj=student()
+# obj.set_data()
+# obj.show()
+
+#init constructor:
+# class student:
+#     def __init__(self,x,y,z):
+#         self.name=x
+#         self.roll=y
+#         self.per=z
+#     def show(self):
+#         print("Name:",self.name)
+#         print("Roll no.:",self.roll)
+#         print("Percentage:",self.per)
+# obj=student("karan",6,7.8)
+# obj.show()
