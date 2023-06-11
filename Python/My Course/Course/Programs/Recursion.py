@@ -87,3 +87,52 @@
 # print(index)
 
 #maximum and minimum in a list:
+
+def largest(a,l,maximum):
+    if l==0:
+        return maximum
+    if l>0:
+        if a[l]>maximum:  #a[8](60)>a[0](1) yeyss
+            maximum=a[l]  #maximum=60
+    return largest(a,l-1,maximum)  #l=
+a=[1,2,3,4,5,90,80,70,60]
+maximum=a[0]
+l=len(a)-1
+print(largest(a,l,maximum))
+
+def smallest(a,l,minimum):
+    if l==0:
+        return minimum
+    if l>0:
+        if a[l]<minimum:
+            minimum=a[l]
+    return smallest(a,l-1,minimum)
+a=[5,6,7,1,9]
+minimum=a[0]
+l=len(a)-1
+print(smallest(a,l,minimum))
+
+class Recursion:
+    def __init__(self):
+        self.a=[1,2,3,4,5,90,80,70,60]
+        self.maximum=self.a[0]
+        self.minimum=self.a[0]
+        self.l=len(self.a)-1
+    def largest(self,l):
+        if l==0:
+            return self.maximum
+        if l>0:
+            if self.a[l]>self.maximum:
+                self.maximum=self.a[l]
+        return self.largest(l-1)
+    def smallest(self,l):
+        if l==0:
+            return self.minimum
+        if l>0:
+            if self.a[l]<self.minimum:
+                self.minimum=self.a[l]
+        return self.smallest(l-1)
+    
+obj=Recursion()
+print(obj.largest(obj.l))
+print(obj.smallest(obj.l))
