@@ -149,16 +149,54 @@
 
 
 #prime number using recursion:
-def prime(num,i): 
-    if i==1:
-        return 1
-    if num%i==0:
-        return 0
-    return prime(num,i-1)
-num=int(input("Enter number"))
-n=prime(num,int(num/2))
-if (n==1):
-    print(num,"It is prime number")
-else:
-    print(num,"It is not a prime number")
+# def prime(num,i): 
+#     if i==1:
+#         return 1
+#     if num%i==0:
+#         return 0
+#     return prime(num,i-1)
+# num=int(input("Enter number"))
+# n=prime(num,int(num/2))
+# if (n==1):
+#     print(num,"It is prime number")
+# else:
+#     print(num,"It is not a prime number")
     
+#sum of digits:
+# def sum(n):
+#     if n<10:
+#         return n
+#     else:
+#         return (n%10)+sum(int(n/10))
+# n=int(input("Enter number:"))
+# print(sum(n))
+
+#power of number
+# def power(a,b):
+#     if b==1:
+#         return a
+#     else:
+#         return a*power(a,b-1)
+# a=int(input("Enter number"))
+# b=int(input("Enter power"))
+# print("Output:",power(a,b))
+
+#count number of digits:
+# def count(n):
+#     if n<10:
+#         return 1
+#     else:
+#         return 1+count(int(n/10))
+# n=int(input())
+# print("Count is:",count(n))
+
+#natural number between range:
+def natural(a,b):
+    if a>b:
+        return -1
+    else:
+        print(a," ",end=' ')
+        return natural(a+1,b)# in reverse a-1
+a=int(input("ENter num 1:"))
+b=int(input("Enter 2 num:"))
+natural(a,b)
