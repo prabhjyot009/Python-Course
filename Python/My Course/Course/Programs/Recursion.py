@@ -228,3 +228,19 @@
 #     print(n,"It is palindrome number")
 # else:
 #     print(n,"It is not palindrome")
+
+#even number between given range:
+
+# def even(a,b):
+#     if a>b:
+#         return -1
+#     else:
+#         print(a)
+#         return even(a+2,b)
+# a=int(input("ENter num 1:"))
+# b=int(input("Enter 2 num:"))
+# if a%2==0:
+#     a=a
+# else:
+#     a+=1
+# even(a,b)
