@@ -38,11 +38,52 @@
 # print(factt)
 
 #factorial:
-def fact(n):
-    if n==1 and n==2:
-        return 1
-    else:
-        return (fact(n-1)+fact(n-2))
-n=int(input("Enter number"))
-factt=fact(n)
-print(factt)
+# def fact(n):
+#     if n==1 and n==2:
+#         return 1
+#     else:
+#         return (fact(n-1)+fact(n-2))
+# n=int(input("Enter number"))
+# factt=fact(n)
+# print(factt)
+
+#First 10 natural numbers:
+#direct recursion:
+
+# def natural(n):
+#     if n<=0:
+#         return -1
+#     else:
+#         natural(n-1)
+#         print(n,end=' ')
+# natural(10)
+
+#indirect recursion:
+
+# def natural(n):
+#     if n<=0:
+#         return -1
+#     else:
+#         natural1(n-1)
+#         print(n,end=' ')
+# def natural1(n):
+#     natural(n-1)
+#     print(n,end=' ')
+
+# natural(10)
+
+#Print First uppercase letter in a string Using Recursion
+
+# def first_upper(str,i):  #i is pointer
+#     l=len(str)
+#     if i>=l:
+#         return -1
+#     if str[i].isupper():
+#         return str[i]
+#     if i<l:
+#         return first_upper(str,i+1)
+# str=input("Enter length of string:")
+# index=first_upper(str,0)
+# print(index)
+
+#maximum and minimum in a list:
