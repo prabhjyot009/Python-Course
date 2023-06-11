@@ -191,12 +191,40 @@
 # print("Count is:",count(n))
 
 #natural number between range:
-def natural(a,b):
-    if a>b:
-        return -1
-    else:
-        print(a," ",end=' ')
-        return natural(a+1,b)# in reverse a-1
-a=int(input("ENter num 1:"))
-b=int(input("Enter 2 num:"))
-natural(a,b)
+# def natural(a,b):
+#     if a>b:
+#         return -1
+#     else:
+#         print(a," ",end=' ')
+#         return natural(a+1,b)# in reverse a-1
+# a=int(input("ENter num 1:"))
+# b=int(input("Enter 2 num:"))
+# natural(a,b)
+
+#armstrong:
+# def arm(n):
+#     if n<10:
+#         return n*n*n
+#     else:
+#         return (n%10)*(n%10)*(n%10)+arm(int(n/10))
+# n=int(input("Enter number:"))
+# r=arm(n)
+# if r==n:
+#     print(n,"is armstrong")
+# else:
+#     print(n,"not a armstrong")
+
+#palindrome:
+# def palin(n,t):
+#     if n==0:
+#         return t
+#     else:
+#         t=(t*10)+(n%10)
+#         return palin(int(n/10),t)
+# n=int(input("Enter number:"))
+# t=0
+# p=palin(n,t)
+# if n==p:
+#     print(n,"It is palindrome number")
+# else:
+#     print(n,"It is not palindrome")
