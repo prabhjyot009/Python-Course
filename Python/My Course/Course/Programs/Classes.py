@@ -135,16 +135,64 @@
 # obj.show()
 
 #init constructor:
-class student:
-    def __init__(self,x,y,z):
-        self.name=x
-        self.roll=y
-        self.per=z
-    def show(self):
-        print("Name:",self.name)
-        print("Roll no.:",self.roll)
-        print("Percentage:",self.per)
-obj=student("karan",6,7.8)
-obj.show()
+# class student:
+#     def __init__(self,x,y,z):
+#         self.name=x
+#         self.roll=y
+#         self.per=z
+#     def show(self):
+#         print("Name:",self.name)
+#         print("Roll no.:",self.roll)
+#         print("Percentage:",self.per)
+# obj=student("karan",6,7.8)
+# obj.show()
 
 
+class dog:
+    def __init__(self,name,age):
+        self.name=name
+        self.age=age
+    def get_age(self):
+        return self.age
+    def get_name(self):
+        return self.name
+d=dog("Tim",9)
+print(d.get_name(),d.get_age())
+d2=dog("Yop",8)
+print(d2.get_name(),d2.get_age())
+
+#Multiple classes:
+class Student:
+    def __init__(self,name,age,grade):
+        self.name=name
+        self.age=age
+        self.grade=grade
+    def get_grade(self):
+        return self.grade
+    
+class Course:
+    def __init__(self,name,max_students):
+        self.name=name
+        self.max_students=max_students
+        self.students=[]
+    def add_student(self,student):
+        if len(self.students)<self.max_students:
+            self.students.append(student)
+            return True
+        return False
+    
+    def get_average_grade(self):
+        value=0
+        for student in self.students:
+            value+=student.get_grade()
+        return value/len(self.students)
+    
+s1=Student("Tim",19,95)
+s2=Student("Bill",19,75)
+s3=Student("Jill",19,85)
+
+course=Course("Science",2)
+course.add_student(s1)
+course.add_student(s2)
+print(course.add_student(s3))
+print(course.get_average_grade())
