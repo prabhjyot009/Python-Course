@@ -146,3 +146,5 @@ class student:
         print("Percentage:",self.per)
 obj=student("karan",6,7.8)
 obj.show()
+
+
