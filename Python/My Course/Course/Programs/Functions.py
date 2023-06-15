@@ -23,12 +23,12 @@
 #     for i in a:
 #         sum=sum+i;
 #     print(sum)
-# # l=[]
-# # size=int(input("Enter size:"))
-# # for i in range(size):
-# #     val=int(input("Enter values:"))
-# #     l.append(val)
-# # print(l)
+# l=[]
+# size=int(input("Enter size:"))
+# for i in range(size):
+#     val=int(input("Enter values:"))
+#     l.append(val)
+# print(l)
 # a=int(input("Enter elemnt to add:"))
 # listadd(a)
 

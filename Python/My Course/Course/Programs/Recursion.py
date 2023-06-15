@@ -39,7 +39,6 @@
 
 #First 10 natural numbers:
 #direct recursion:
-
 # def natural(n):
 #     if n<=0:
 #         return -1
@@ -164,7 +163,7 @@
 #power of number
 # def power(a,b):
 #     if b==1:
-#         return a
+# #         return a
 #     else:
 #         return a*power(a,b-1)
 # a=int(input("Enter number"))
