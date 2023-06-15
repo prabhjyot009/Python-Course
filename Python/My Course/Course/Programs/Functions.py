@@ -70,18 +70,18 @@
 # print(z)
 
 # Q1.create a function which takes n number of inputs from tuple and return the sum of all the elements in the list and print the list.
-# def listadd(*a):
-#     sum=0
-#     for i in a:
-#         sum=sum+i;
-#     return sum
-# l=[]
+def listadd(*a):
+    sum=0
+    for i in a:
+        sum=sum+i;
+    return sum
+l=[1,2,3,4]
 # size=int(input("Enter size:"))
 # for i in range(size):
 #     val=int(input("Enter values:"))
 #     l.append(val)
 # ll=
-# print(listadd(*l))
+print(listadd(*l))
 
 # lambda functions are anoynymous functions that is fucntion eithout name these fucntionsa have only single line they can have any number of arguments
 # they cannnot access global varuable and donot have explicit return statement
@@ -307,11 +307,11 @@
 # print(func(4))
 
 #local variable:
-def abc():
-    x=1
-    y=2
-    str1='hello'
-    z=4
-    print("yo")
-print(abc.__code__.co_nlocals)
+# def abc():
+#     x=1
+#     y=2
+#     str1='hello'
+#     z=4
+#     print("yo")
+# print(abc.__code__.co_nlocals)
 
