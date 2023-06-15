@@ -37,16 +37,6 @@
 # factt=fact(n)
 # print(factt)
 
-#factorial:
-# def fact(n):
-#     if n==1 and n==2:
-#         return 1
-#     else:
-#         return (fact(n-1)+fact(n-2))
-# n=int(input("Enter number"))
-# factt=fact(n)
-# print(factt)
-
 #First 10 natural numbers:
 #direct recursion:
 
