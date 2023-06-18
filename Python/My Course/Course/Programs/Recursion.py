@@ -236,12 +236,12 @@
 
 
 #multiplication table of n number:
-def table(n,i):
-    if i==11:
-        return -1
-    else:
-        print(n,"*",i,"=",n*i)
-        return table(n,i+1)
-n=int(input("Enter number:"))
-i=1
-table(n,i)+
+# def table(n,i):
+#     if i==11:
+#         return -1
+#     else:
+#         print(n,"*",i,"=",n*i)
+#         return table(n,i+1)
+# n=int(input("Enter number:"))
+# i=1
+# table(n,i)
