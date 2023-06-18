@@ -244,4 +244,4 @@ def table(n,i):
         return table(n,i+1)
 n=int(input("Enter number:"))
 i=1
-table(n,i)
+table(n,i)+
