@@ -245,3 +245,17 @@
 # n=int(input("Enter number:"))
 # i=1
 # table(n,i)
+
+def palin(n,t):
+    if n==10:
+        return t
+    else:
+        t=(t*10)+(n%10)
+    return palin(n,t)
+n=int(input())
+t=0
+p=palin(int(n/10),t)
+if n==p:
+    print("It is palin")
+else:
+    print('Not')
